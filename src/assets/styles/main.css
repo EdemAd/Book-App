@@ -1,0 +1,135 @@
+
+:root {
+
+    --palette-White:white;
+    --palette-fontWhite: whitesmoke;
+    --palette-fontLightBlue:rgba(137, 195, 249, 0.611); 
+    --palette-fontRoyalBlue: royalblue;
+    --palette-Coral: coral; 
+
+
+    --palette-fontDark: rgba(18, 17, 17, 0.986) ;
+    --palette-fontGrey: rgba(119,119,119,0.5);
+
+}
+
+:root{
+    --colorWhite: var(--palette-White);
+    --colorWhiteFont: var(--palette-fontWhite);
+    --colorLightBlue: var(--palette-fontLightBlue); 
+    --colorRoyalBlue: var(--palette-fontRoyalBlue);
+    --colorCoral: var(--palette-Coral);
+    --colorGrey: var(--palette-fontGrey);
+    --colorDark: var(--palette-fontDark)
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --colorWhite: var(--palette-fontDark);
+        --colorWhiteFont:var(var(--palette-fontWhite));
+        --colorLightBlue: var(--palette-fontGrey); 
+        --colorRoyalBlue: var(--palette-Coral);
+        --colorCoral: var(--palette-fontRoyalBlue); 
+        --colorGrey:var(--palette-fontDark);
+        --colorDark:var(--palette-White);
+    }
+}
+
+html {
+
+    font-family: 'Rowdies',cursive;
+    color: var(--colorDark);
+}
+
+body {
+    background-color: var(--colorWhite);
+}
+
+template {
+
+    text-align: center;
+}
+
+button {
+    width: 100px;
+}
+
+.box {
+    border: 1px solid var(--colorDark);
+    width: 100%;
+    margin-top: 10px;
+    background-color: var(--colorLightBlue);
+
+}
+
+ul {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.list {
+
+    margin-top: 20px;
+}
+
+.link {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.link :hover {
+    color:var(--colorCoral);
+    cursor: pointer;
+}
+
+.title {
+
+    color: var(--colorRoyalBlue);
+}
+
+.searchbar {
+
+    width: 300px;
+    height: 20px;
+    
+}
+
+.form {
+
+    color: var(--colorRoyalBlue)
+
+}
+
+header li {
+    color: var(--colorCoral)    
+}
+
+header li:hover {
+    color: (var(--colorRoyalBlue));
+}
+
+.bookfont {
+    color: var(--colorDark);
+}
+
+.btn {
+    margin-top: 15px;
+    border-radius: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    border: 3px;
+    border-style: solid;
+    border-color: var(--colorRoyalBlue);
+    color: var(--colorCoral);
+    font-size: large;
+    font-family:'Rowdies', cursive; ;
+    width: 100px;
+    height: 30px;
+    border-radius: 75px;
+    cursor: pointer;
+}
+
+.inblack {
+    color:var(--colorDark)
+}
